@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#clock {
+    background-color: white;
+    color: tomato;
+    display: inline-flex;
+    margin: 0;
+    height: 50px;
+    width: 100px;
+}
