@@ -36,4 +36,4 @@ Icon made by Freepik from [www.flaticon.com](https://www.flaticon.com/)
 Copyright (c) 2020 DT. Everyone is permitted to use, copy, and modify verbatim copies of this document.
 
 ---
-[link]:
+[link]: https://delph-sunny.github.io/04-Code_Quiz_with_APIs/
