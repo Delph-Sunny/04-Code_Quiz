@@ -1,16 +1,18 @@
 # 04-Code_Quiz_with_APIs
 ---
-  IN PROGRESS :sweat_smile:
+  
+  IN PROGRESS   :sweat_smile:
+
 ---
 
 ## Description 
-The webpage is a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code.
+The webpage is a __timed coding quiz with multiple-choice questions__. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code.
 The following criteria are required for this website:
-> [ ] A start button will starts a timer  
-> [ ] The user is presented a new question after each answer.  
-> [ ] An incorrect answer will substract time from the clock.  
-> [ ] The game is over when the clock reaches 0 or all questions are answered  
-> [ ] the score and the user initial are saved.  
+- [ ] A start button will starts a timer.  
+- [ ] The user is presented a new question after each answer.  
+- [ ] An incorrect answer will substract time from the clock.  
+- [ ] The game is over when the clock reaches 0 or all questions are answered.  
+- [ ] The score and the user initial are saved.  
 
 ## Installation
 
@@ -25,9 +27,8 @@ The following animation demonstrates the application functionality:
 
 ## Credits
 
-Trilogy Education Services for the image
+Trilogy Education Services for the image  
 Icon made by Freepik from [www.flaticon.com](https://www.flaticon.com/)
-Background image by Markus Spiske on https://www.Unsplash.com
 
 
 ## License
