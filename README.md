@@ -8,7 +8,7 @@
 ## Description 
 The webpage is a __timed coding quiz with multiple-choice questions__. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code.
 The following criteria are required for this website:
-- [ ] A start button will starts a timer.  
+- [X] A start button will starts a timer.  
 - [ ] The user is presented a new question after each answer.  
 - [ ] An incorrect answer will substract time from the clock.  
 - [ ] The game is over when the clock reaches 0 or all questions are answered.  

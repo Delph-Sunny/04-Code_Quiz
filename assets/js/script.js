@@ -17,7 +17,7 @@ function startClock() {
     // Adding leading 0
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
-    countdownBox.value = `${minutes}:${seconds}`;
+    countdownBox.value = `Time left: ${minutes}:${seconds}`;
     time--;
   }, 1000);  
   
