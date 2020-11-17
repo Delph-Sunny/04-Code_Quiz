@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icon website -->
     <link rel="icon" type="image/png" href="./assets/images/quiz.png" sizes="16x16">
     <title>Code Quiz Challenge</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script defer src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
-    <!-- Static navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="nav-left">
-                <a class="nav-link" href="./highscores.html">View Highscores</a>
+    <!-- Top bar -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div class="left">
+                <a class="link" href="./scores.html">View High Scores</a>
             </div>
-            <div class="nav-right">
-                <input type="text" class="clock" readonly value="Time: 05:00">
+            <div class="right">
+                <input type="text" class="clock" readonly value="">
             </div>
-        </div>
-    </nav>
-    <!--container for text and questions-->
-    <div class="container"> 
-        <div id="question-container"></div> 
-        <!-------------------TO DO --------------------->
-        <div class="controls">
-            <button id="start" class="start btn">Start</button>
         </div>
     </div>
-    
+    <!--container for text and button-->
+    <div class="container"> 
+        <div id="start-container">
+            <h1>Coding Quiz Challenge</h1>
+            <p id="start-txt">Try to answer the following code-related questions within the time limit. 
+                Keep in mind that incorrect answers will penalize your scoretime by 10 seconds.</p>
+        </div>  
+        <div class="controls">
+            <a class="btn" id="start-btn" href="./quiz.html">Start</a>
+        </div>
+    </div>   
 </body>
 </html>
