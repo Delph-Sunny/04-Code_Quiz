@@ -42,15 +42,14 @@ font-size: 1.2rem;
 /* Right-aligned section inside the top bar */
 .right input {
   float: right;
-  border-width: 0;
-  
+  border-width: 0;    
   color: #f2f2f2;
   text-align: center;
   padding: 1.1rem 1.5rem;
   text-decoration: none;
   font-size: 1.2rem;
 }
-input[type="text"]
+.right input[type="text"]
 {
   background: transparent;
   border: none;
@@ -104,24 +103,12 @@ text-decoration: none;
 cursor: pointer;
 box-shadow: 0px 5px 10px 0px rgba(141, 76, 146, 0.808);
 transform: translateY(-0.1rem);
-/*transition: transform 150ms; */
 }
 
 .btn[disabled]:hover {
 cursor: not-allowed;
 box-shadow: none;
-/* transform: none; */
-}
-
-
-.flex {    
-height: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-max-width: 80rem;
-margin: 0 auto;
-top: 5rem;
+transform: translate;
 }
 
 
@@ -130,10 +117,8 @@ top: 5rem;
 display: flex;   
 margin-bottom: 0.5rem;
 width: 100%;
-font-size: 1.8rem;
 border: 0.1rem solid rgba(171, 89, 177, 0.808);
 background-color: white;
-min-height: 5rem;
 }
 
 .choice-container:hover {
@@ -144,7 +129,7 @@ transform: translateY(-0.1rem);
 
 .choice-number {
 margin:0;
-padding: 1.2rem;
+padding: 1.2rem 1.4rem 1.2rem 1.4rem;
 background-color: rgba(85, 44, 88, 0.808);
 color: white;
 }
@@ -169,3 +154,43 @@ background-color: rgb(68, 245, 177);
 .wrong {
 background-color: red;
 }
+
+/* End Page */
+.input-group {    
+align-items: left;
+max-width: 80rem;
+margin: 2rem auto;
+top: 5rem;
+}
+
+input {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;  
+  min-width: 60%;  
+}
+
+label {
+font-size: 1.2rem;
+}
+
+.controls {
+float: center; 
+gap: 1rem;
+}
+
+#msg {
+ min-height: 1.2rem;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.success {
+  color:green;
+  font-weight: bold;
+  font-style: italic;
+}
+

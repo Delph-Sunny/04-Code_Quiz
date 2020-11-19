@@ -8,7 +8,7 @@ let acceptingAnswers = false;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let score, interval;
+let interval;
 const startingMinutes = 1;          // Initial timer in minutes
 let time = startingMinutes * 60;     // conversion of minutes into seconds
 
@@ -21,19 +21,21 @@ function startTimer() {
     // Adding leading 0
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
+    if (time >= 0){                         // Only display positive time
     countdownBox.value = `Time: ${minutes}:${seconds}`;
-    if (--time < 0) {
+    }
+    if (--time <= 0) {                      // Stop timer as soon as negative value
       clearInterval(interval);
-    } 
+    }
   }, 1000);  
 }
 
 
-/* Stop timer and record score in s  */
+/* Stop timer and record score in s  
 function stopTimer() {
     score = time;
     clearInterval(interval); 
-}
+}*/
  
 
 /* Quiz questions */
@@ -80,6 +82,11 @@ let questions = [
     }
 ];
 
+let score = {                // To store all values
+  userName: "",
+  userScore: 0
+} 
+
 //CONSTANTS
 const NBQUESTIONS = 5;
 const PENALTY = 10; 
@@ -93,7 +100,10 @@ function startGame() {
 
 function newQuestion() {
     if (questionCounter >= NBQUESTIONS || time < 0) {
-        return window.location.assign("./end.html"); //go to the end page
+      if (time < 0 ) { time = 0 }     // Setting time to 0 if negative value
+      score.userScore = time;
+      localStorage.setItem("score", JSON.stringify(score));
+      return window.location.assign("./end.html"); //go to the end page
     }
     questionCounter++; 
     /* shuffling questions */
