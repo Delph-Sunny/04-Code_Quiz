@@ -108,7 +108,7 @@ transform: translateY(-0.1rem);
 .btn[disabled]:hover {
 cursor: not-allowed;
 box-shadow: none;
-transform: translate;
+transform: none;
 }
 
 

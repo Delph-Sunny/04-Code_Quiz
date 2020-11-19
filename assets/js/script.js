@@ -83,7 +83,6 @@ let questions = [
 ];
 
 let score = {                // To store all values
-  userName: "",
   userScore: 0
 } 
 

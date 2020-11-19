@@ -27,8 +27,8 @@ submitEl.addEventListener("click", function(event){
         displayMessage("success", "Name recorded. You're now in the high score list.");
         localStorage.setItem("user", JSON.stringify(user));
         // disable mutiple submissions
-        submitEl.setAttribute = "disabled";
-        submitEl.style.opacity = "40%"
+        submitEl.disabled = "true";
+        submitEl.style.opacity = "40%";
         backEl.textContent = "Home"     // Change button text
         // Or return window.location.assign("./scores.html");
       }
