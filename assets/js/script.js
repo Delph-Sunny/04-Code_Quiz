@@ -82,9 +82,9 @@ let questions = [
     }
 ];
 
-let score = {                // To store all values
+/*let score = {                // To store all values
   userScore: 0
-} 
+} */
 
 //CONSTANTS
 const NBQUESTIONS = 5;
@@ -100,8 +100,7 @@ function startGame() {
 function newQuestion() {
     if (questionCounter >= NBQUESTIONS || time < 0) {
       if (time < 0 ) { time = 0 }     // Setting time to 0 if negative value
-      score.userScore = time;
-      localStorage.setItem("score", JSON.stringify(score));
+      localStorage.setItem("latestScore", time);
       return window.location.assign("./end.html"); //go to the end page
     }
     questionCounter++; 
