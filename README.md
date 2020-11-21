@@ -11,12 +11,14 @@ The following criteria are required for this website:
 - [X] The game is over when the clock reaches 0 or all questions are answered.  
 - [X] The score and the user initial are saved.  
 
+There are 5 questions to answer in less than 1 minute. The high score list displays only the top 5 best scores.  
+
 ## Installation
 
 Click on this [link] or download the entire repository, unzip the files and double-click on `index.html` to see the page in an internet browser.
 Click on the start button and anwser to each question as fast as possible until the timer is at 0 or you answered all the questions. Record your name and check out the high scores list. Clear the list to start over a new set of records.
 
-## Mock-Up
+## Mock-Up model
 
 The following animation demonstrates the application functionality:
 

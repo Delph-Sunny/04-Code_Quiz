@@ -196,10 +196,16 @@ gap: 1rem;
 }
 
 /**** HighScore Page ****/
-li {
+
+table {
+  width:100%;  
+}
+th {
   white-space: pre;
-  list-style-type: none;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+  text-align: left;
+  font-size: 1.7rem;
+}
+td {
+  white-space: pre;
   font-size: 1.5rem;
 }

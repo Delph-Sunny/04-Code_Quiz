@@ -1,42 +1,43 @@
+/* General constant */
 const questionEl = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-txt"));
 const countdownBox = document.querySelector(".timer");
 
+const NBQUESTIONS = 5;
+const PENALTY = 10; 
 
+/* Variables for questions */
 let currentQuestion = {};
 let acceptingAnswers = false;
 let questionCounter = 0;
 let availableQuestions = [];
 
+/* Variables for timer */
 let interval;
 const startingMinutes = 1;          // Initial timer in minutes
 let time = startingMinutes * 60;     // conversion of minutes into seconds
 
 
-/**** Start the timer and display in min and s ****/
+/**** Function to start the timer and display in min and s ****/
 function startTimer() {
   interval = setInterval(function(){         // Interval time of clock at every 1000 millisecond
     var minutes = Math.floor(time / 60);
     var seconds = time % 60;
-    // Adding leading 0
+    /* Adding leading 0 */
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
+    
     if (time >= 0){                         // Only display positive time
-    countdownBox.value = `Time: ${minutes}:${seconds}`;
-    }
-    if (--time <= 0) {                      // Stop timer as soon as negative value
+      countdownBox.value = `Time: ${minutes}:${seconds}`;
+      if (time == 0) {
+        window.location.assign("./end.html"); // Go to the end page in case user doesn't play before end of timer
+      }
+    }    
+    if (--time < 0) {                      // Stop timer as soon as negative value
       clearInterval(interval);
     }
   }, 1000);  
 }
-
-
-/* Stop timer and record score in s  
-function stopTimer() {
-    score = time;
-    clearInterval(interval); 
-}*/
- 
 
 /* Quiz questions */
 let questions = [
@@ -82,26 +83,19 @@ let questions = [
     }
 ];
 
-/*let score = {                // To store all values
-  userScore: 0
-} */
-
-//CONSTANTS
-const NBQUESTIONS = 5;
-const PENALTY = 10; 
 
 function startGame() {
     startTimer()
     questionCounter = 0;
-    availableQuestions = [...questions]; //copy the questions array
+    availableQuestions = [...questions]; // Copy the questions array content into new array
     newQuestion();
 };
 
 function newQuestion() {
-    if (questionCounter >= NBQUESTIONS || time < 0) {
+    if (questionCounter >= NBQUESTIONS || time <= 0) {
       if (time < 0 ) { time = 0 }     // Setting time to 0 if negative value
       localStorage.setItem("latestScore", time);
-      return window.location.assign("./end.html"); //go to the end page
+      return window.location.assign("./end.html"); // Go to the end page
     }
     questionCounter++; 
     /* shuffling questions */
@@ -111,7 +105,7 @@ function newQuestion() {
     questionEl.innerText = currentQuestion.question;
     /* Fill the choices matching the question above */
     choices.forEach( function(choice) {
-        const number = choice.dataset["number"];    //get the data-number vlaue property
+        const number = choice.dataset["number"];    //get the data-number value property
         choice.innerText = currentQuestion["choice" + number];
     });
 
@@ -147,5 +141,5 @@ choices.forEach( function(choice) {
 });
 
 
-startGame();
+startGame();  // Launch the game
 
