@@ -2,17 +2,10 @@ const highScoreList = document.querySelector("ul");
 const clearBtn = document.querySelector(".clear");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-
-/*var li = document.createElement("li");
-li.classList.add("score");
-li.textContent =`${highScores.name} - ${highScores.score}`;
-li.setAttribute("id", "index"+ index);
-highScoreList.appendChild(li); */
-
-
+// Display results
 highScoreList.innerHTML = highScores.map(
     highScores => {
-    return `<li class="score"><i class="material-icons">grade</i>${highScores.name} --- ${highScores.score}</li>`;
+    return `<li class="score"><i class="material-icons">grade</i> ${highScores.name}      -      ${highScores.score}</li>`;
   })
   .join("");
 
