@@ -20,7 +20,7 @@ Click on the start button and anwser to each question as fast as possible until 
 
 ## Mock-Up model
 
-The following animation demonstrates the application functionality:
+The following animation demonstrates the application functionalities needed for a successful quiz:
 
 ![code quiz](./assets/images/04-web-apis-homework-demo.gif)
 
