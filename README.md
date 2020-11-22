@@ -7,7 +7,7 @@ The webpage is a __timed coding quiz with multiple-choice questions__. This app 
 The following criteria are required for this website:
 - [X] A start button will starts a timer.  
 - [X] The user is presented a new question after each answer.  
-- [X] An incorrect answer will substract time from the clock.  
+- [X] An incorrect answer will subtract time from the clock.  
 - [X] The game is over when the clock reaches 0 or all questions are answered.  
 - [X] The score and the user initial are saved.  
 
@@ -16,7 +16,7 @@ There are 5 questions to answer in less than 1 minute. The high score list displ
 ## Installation
 
 Click on this [link] or download the entire repository, unzip the files and double-click on `index.html` to see the page in an internet browser.
-Click on the start button and anwser to each question as fast as possible until the timer is at 0 or you answered all the questions. Record your name and check out the high scores list. Clear the list to start over a new set of records.
+Click on the start button and answer to each question as fast as possible until the timer is at 0 or you answered all the questions. Record your name and check out the high scores list. Clear the list to start over a new set of records.
 
 ## Mock-Up model
 
