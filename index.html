@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Icon website -->
     <link rel="icon" type="image/png" href="./assets/images/quiz.png" sizes="16x16">
     <title>Code Quiz Challenge</title>
@@ -11,24 +12,20 @@
 <body>
     <!-- Top bar -->
     <div class="topbar">
-        <div class="topbar-container">
-            <div class="left">
-                <a class="link" href="./highscore.html">View High Scores</a>
-            </div>
-            <div class="right">
-                <input type="text" class="timer" readonly value="">
-            </div>
-        </div>
+        <a class="link" href="./highscore.html">View High Scores</a>
+        <input type="text" class="timer" readonly value="">  
     </div>
     <!--container for text and button-->
-    <div class="container"> 
-        <div id="start-container">
-            <h1>Coding Quiz Challenge</h1>
-            <p id="start-txt">Try to answer the following code-related questions within the time limit. 
-                Keep in mind that incorrect answers will penalize your scoretime by 10 seconds.</p>
-        </div>  
-        <div class="controls">
-            <a class="btn" id="start-btn" href="./quiz.html">Start</a>
+    <div class="wrapper">
+        <div class="container"> 
+            <div id="start-container">
+                <h1>Coding Quiz Challenge</h1>
+                <p id="start-txt">Try to answer the following code-related questions within the time limit. 
+                    Keep in mind that incorrect answers will penalize your scoretime by 10 seconds.</p>
+            </div>  
+            <div class="controls">
+                <a class="btn" id="start-btn" href="./quiz.html">Start</a>
+            </div>
         </div>
     </div>   
 </body>
