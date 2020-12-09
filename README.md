@@ -18,11 +18,9 @@ There are 5 questions to answer in less than 1 minute. The high score list displ
 Click on this [link] or download the entire repository, unzip the files and double-click on `index.html` to see the page in an internet browser.
 Click on the start button and answer to each question as fast as possible until the timer is at 0 or you answered all the questions. Record your name and check out the high scores list. Clear the list to start over a new set of records.
 
-## Mock-Up model
+## Preview of the app  
 
-The following animation demonstrates the application functionalities needed for a successful quiz:
-
-![code quiz](./assets/images/04-web-apis-homework-demo.gif)
+![code quiz](./assets/images/Preview.pgn)
 
 ## Credits
 
